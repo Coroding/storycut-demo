@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StoryCut PRD Prototype</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand" aria-label="StoryCut">
+        <div class="brand-mark">SC</div>
+        <div class="brand-copy">
+          <strong>StoryCut</strong>
+          <span>一键粗剪助手</span>
+        </div>
+      </div>
+      <nav class="progress" id="progress" aria-label="流程进度"></nav>
+      <div class="stage-badge">PRD Prototype</div>
+    </div>
+  </header>
+
+  <main class="shell">
+    <section id="app" class="page-shell"></section>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <div class="modal-backdrop" id="modalBackdrop" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal-head">
+        <h2 id="modalTitle">修改内容</h2>
+        <button class="icon-btn" id="modalClose" type="button" aria-label="关闭">×</button>
+      </div>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
